@@ -10,7 +10,7 @@
 > **Real-time harmful algal bloom detection and monitoring using NASA satellite data to protect urban water supplies and public health**
 
 ### 🎯 Quick Links
-- 📹 [Demo Video](#-project-video) | 🚀 [Live Demo](YOUR_DEMO_LINK) | 📊 [Technical Details](#-technical-stack) | 👥 [Team](#-team)
+- 📹 [Demo Video](#-project-video) 
 
 ## 👥 Team
 
