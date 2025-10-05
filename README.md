@@ -633,179 +633,43 @@ CodeCompanion/
 
 ---
 
+## 🤝 Contributing
 
-## 🎓 What We Learned
+### Code Style
 
-### Technical Learnings
-- **NASA API Integration**: Mastered CMR API, authentication flows, and data download pipelines
-- **Geospatial Processing**: Learned rasterio, coordinate transformations, and GeoTIFF manipulation
-- **Remote Sensing**: Understood spectral indices, multi-temporal analysis, and bloom detection algorithms
-- **Performance Optimization**: Implemented concurrent downloads, windowed reads, and efficient caching
-- **Cloud Considerations**: Designed for scalability with streaming downloads and memory-efficient processing
+- Type hints on all functions
+- Docstrings with Args/Returns
+- Functions ≤80 lines (single responsibility)
+- Use `logger.info/warning/error` for output
+- Never log credentials
 
-### Challenge-Specific Insights
-- **Urban Water Quality**: Understood the critical link between satellite data and urban planning decisions
-- **Real-Time Requirements**: Balanced accuracy with speed for actionable intelligence
-- **Accessibility**: Designed for non-technical users (city planners, health officials) not just scientists
-- **Data Democratization**: Made professional-grade analysis tools accessible to everyone
+### Git Workflow
 
-### Team Collaboration
-- **Division of Labor**: Effective specialization (development vs. design/presentation)
-- **Agile Development**: Rapid iteration and feature prioritization
-- **User-Centric Design**: Constant focus on end-user needs and workflow
-
----
-
-## 🚀 Future Enhancements
-
-### Phase 1 (Next 3 Months)
-- [ ] **Email/SMS Alerts**: Automated notifications when bloom severity exceeds thresholds
-- [ ] **Mobile App**: iOS/Android app for field monitoring
-- [ ] **API Endpoint**: RESTful API for integration with existing city systems
-- [ ] **Multi-Language Support**: Spanish, French, Portuguese for global accessibility
-
-### Phase 2 (6-12 Months)
-- [ ] **Machine Learning**: Predictive modeling for bloom forecasting (7-14 day predictions)
-- [ ] **IoT Integration**: Combine satellite data with ground sensor networks
-- [ ] **Stakeholder Dashboard**: Custom views for different user types (planners, health officials, public)
-- [ ] **Historical Analysis**: 25-year trend analysis using complete Landsat/Sentinel archive
-
-### Phase 3 (Long-Term Vision)
-- [ ] **Global Bloom Network**: Collaborative platform for sharing data and insights
-- [ ] **Climate Impact Studies**: Link bloom patterns to climate change indicators
-- [ ] **Policy Recommendations**: Generate automated reports for regulatory compliance
-- [ ] **Commercial Services**: Premium features for municipalities and water utilities
+```bash
+git checkout -b feature/my-feature
+# Make changes
+pytest tests/ -v
+git commit -m "feat: Add feature description"
+git push origin feature/my-feature
+```
 
 ---
 
-## 🤖 Development Tools & AI Assistance
+## 📄 License
 
-This project was developed with assistance from **GitHub Copilot**, an AI-powered code completion tool. Copilot was used for:
-
-- **Algorithm Optimization**: Refining single-band processing and multi-granule averaging techniques
-- **Error Handling**: Implementing robust exception handling and validation logic
-- **Code Refactoring**: Improving code structure, readability, and maintainability
-- **Documentation**: Generating comprehensive docstrings and inline comments
-- **Debugging**: Identifying and resolving format string errors, variable scope issues, and API integration problems
-
-**Important Note**: All AI-generated code suggestions were carefully reviewed, tested, and modified by the development team to ensure:
-- ✅ Accuracy and correctness of algorithms
-- ✅ Compliance with NASA data access policies
-- ✅ Proper error handling and edge case management
-- ✅ Code quality and maintainability standards
-
-The final implementation represents a collaborative effort between human expertise in remote sensing and AI-assisted development acceleration.
+NASA Space Apps 2025 Project
 
 ---
 
-## 📜 License & Contributing
+## 👥 Team
 
-This project is licensed under the MIT License - see LICENSE file for details.
+**The Revolutionist**
+- Deon George
+- Christopher Joshy
 
-### How to Contribute
-We welcome contributions from the community! Whether you're interested in:
-- 🐛 Bug fixes and issue reports
-- ✨ New features and enhancements
-- 📖 Documentation improvements
-- 🌍 Translations and internationalization
-- 🧪 Testing and quality assurance
+**Contact:** [Your contact info]
 
-Please open an issue or submit a pull request on GitHub.
-
----
-
-## 🏆 NASA Space Apps Challenge 2025
-
-### Challenge Category
-**Data Pathways to Healthy Cities and Human Settlements**
-
-**Challenge Description:**  
-Climate change brings about new complexities to consider for maintaining the wellbeing of society and the environment in cities. Natural resources, ecosystems, and existing infrastructure all must be monitored to ensure human quality of life remains high. Your challenge is to demonstrate how an urban planner can use NASA Earth observation data to develop smart strategies for city growth that maintain both the wellbeing of people and the environment. (Earth Science Division)
-
-**Difficulty Level:** Intermediate/Advanced  
-**Division:** Earth Science Division  
-**Challenge Number:** NASA Space Apps 2025 - Challenge 7
-
-**Our Approach:**  
-PROJECT H.Y.D.R.A. addresses a critical component of healthy cities and human settlements: **water quality monitoring through harmful algal bloom detection**. Our solution demonstrates how NASA Earth observation data can be used to:
-- 🏙️ Monitor water bodies near urban areas for contamination risks
-- 💧 Protect drinking water supplies for city populations
-- 🏖️ Safeguard recreational water areas and coastal economies
-- 🌊 Track ecosystem health in lakes, rivers, and coastal zones
-- 📊 Provide actionable data for urban planners and environmental managers
-- ⚡ Enable rapid response to water quality threats
-
-Clean, safe water is fundamental to healthy cities. By providing real-time algal bloom detection and severity classification, H.Y.D.R.A. empowers urban planners, city officials, and environmental agencies to make data-driven decisions that protect public health and maintain quality of life.
-
-### 🎯 Real-World Use Cases
-
-**1. City Water Department (Toledo, Ohio)**
-- **Challenge**: Lake Erie supplies drinking water to 11 million people; 2014 bloom contaminated tap water
-- **Solution**: Daily monitoring with H.Y.D.R.A. provides early warnings 7-14 days before traditional methods
-- **Impact**: Prevents water crisis, protects 500,000 residents, saves millions in emergency response
-
-**2. Coastal Tourism Board (Florida Gulf Coast)**
-- **Challenge**: Red tide blooms cost Florida tourism $130M annually; need real-time beach safety data
-- **Solution**: Monitor 20+ beaches simultaneously with color-coded severity maps
-- **Impact**: Timely beach closures protect public health, maintain trust, preserve tourism revenue
-
-**3. Agricultural Water District (California Central Valley)**
-- **Challenge**: Irrigation canals affected by algal blooms; impacts crop yields and food safety
-- **Solution**: Weekly monitoring of irrigation reservoirs and canals
-- **Impact**: Early detection allows treatment before water distribution, protects $50B agricultural economy
-
-**4. Environmental Agency (Lake Champlain, Vermont)**
-- **Challenge**: Monitor 120-mile lake for regulatory compliance; limited staff and budget
-- **Solution**: Automated monitoring replaces expensive manual sampling ($2000/sample → $0)
-- **Impact**: 100% coverage vs. 5% with manual methods, better data for policy decisions
-
-**5. Community Action Group (Lake Pontchartrain, Louisiana)**
-- **Challenge**: Underserved communities lack resources for professional water testing
-- **Solution**: Free, accessible monitoring empowers community advocacy
-- **Impact**: Evidence for environmental justice claims, improved public health outcomes
-
-### NASA Data Sources Used
-
-1. **HLS (Harmonized Landsat Sentinel-2)** - Collection: C2021957295-LPCLOUD
-   - 30m resolution multispectral satellite imagery
-   - Global coverage with 2-5 day revisit time
-   - [Dataset Information](https://lpdaac.usgs.gov/products/hlss30v020/)
-
-2. **CMR API** - NASA's Common Metadata Repository
-   - Satellite data discovery and granule search
-   - [API Documentation](https://cmr.earthdata.nasa.gov/)
-
-3. **GIBS** - Global Imagery Browse Services
-   - MODIS True Color imagery for base maps
-   - [Service Details](https://earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/gibs)
-
-### Other Data Sources
-
-- **OpenStreetMap Nominatim**: Geocoding service for place name to coordinates conversion
-
-### Innovation & Impact
-
-**Technical Innovation**:
-- 🚀 Adaptive single-band processing approach compatible with NASA's data format
-- 📊 Multi-temporal averaging for noise reduction and accuracy improvement
-- ⚡ Real-time processing (1-2 minutes) vs. traditional methods (days/weeks)
-- 🌐 Web-based accessibility requiring no specialized GIS software
-- 🎯 Quick location presets for instant access to global bloom hotspots
-- 📈 Enhanced 4-stage progress tracking with real-time estimates
-
-**Societal Impact**:
-- 🏥 **Public Health**: Early detection enables preventive action before blooms become toxic
-- 🌾 **Agriculture**: Protects irrigation water supplies and livestock water sources
-- 🐟 **Ecosystems**: Monitors aquatic habitats that support broader phenological patterns
-- 💧 **Water Quality**: Free access democratizes monitoring for underserved communities
-- 🌍 **Global Reach**: Applicable to both developed and developing regions worldwide
-- 🎯 **UN SDGs**: Supports Sustainable Development Goals (SDG 6: Clean Water, SDG 14: Life Below Water, SDG 15: Life on Land)
-
-**Environmental Monitoring**:
-- Seasonal bloom patterns affect agricultural planning and water resource management
-- Real-time alerts enable rapid response to protect ecosystems
-- Historical trend analysis supports long-term environmental policy decisions
-- Integration with weather and climate data enhances predictive capabilities
+**Project:** NASA Space Apps Challenge 2025
 
 ---
 
