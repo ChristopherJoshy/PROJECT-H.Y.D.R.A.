@@ -700,12 +700,7 @@ NASA Space Apps 2025 Project
 
 ## 📞 Contact & Links
 
-- **GitHub Repository**: https://github.com/ChristopherJoshy/PROJECT-H.Y.D.R.A
-- **Team Email**: [Your Email]
-- **Project Demo**: [Live Demo Link]
-- **Video Presentation**: [YouTube/Video Link]
-- **NASA Space Apps Project Page**: [Space Apps Link]
-
+- **GitHub Repository**: https://github.com/ChristopherJoshy/PROJECT-H.Y.D.R.A.
 ---
 
 <div align="center">
