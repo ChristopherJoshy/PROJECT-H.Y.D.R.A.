@@ -330,7 +330,7 @@ NASA Space Apps 2025 Project
 - Deon George
 - Christopher Joshy
 
-**Contact:** [Your contact info]
+**Contact:** Christopherjoshy4@gmail.com
 
 **Project:** NASA Space Apps Challenge 2025
 
