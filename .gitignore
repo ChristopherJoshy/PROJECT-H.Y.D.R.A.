@@ -5,6 +5,8 @@
 .env.local
 .env.*.local
 *.env
+.netrc
+_netrc
 
 # Python
 __pycache__/
