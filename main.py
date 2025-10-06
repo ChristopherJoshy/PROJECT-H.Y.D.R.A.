@@ -46,6 +46,34 @@ except ImportError:
     # dotenv not available (e.g., on Render), use environment variables directly
     pass
 
+# Setup .netrc for NASA Earthdata authentication (required for Render)
+def setup_netrc_if_needed():
+    """Setup .netrc file if running on cloud platform and credentials are in environment"""
+    netrc_path = Path.home() / ".netrc"
+    
+    # Check if .netrc already exists
+    if netrc_path.exists():
+        return
+    
+    # Check if credentials are in environment
+    username = os.getenv("NASA_EARTHDATA_USERNAME")
+    password = os.getenv("NASA_EARTHDATA_PASSWORD")
+    
+    if username and password:
+        try:
+            netrc_content = f"""machine urs.earthdata.nasa.gov
+    login {username}
+    password {password}
+"""
+            netrc_path.write_text(netrc_content)
+            netrc_path.chmod(0o600)
+            print(f"✅ .netrc file created for NASA Earthdata authentication")
+        except Exception as e:
+            print(f"⚠️  Could not create .netrc file: {e}")
+
+# Run setup on import
+setup_netrc_if_needed()
+
 # Configure logging with custom handler for Streamlit
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

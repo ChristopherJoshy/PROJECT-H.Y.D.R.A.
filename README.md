@@ -263,6 +263,16 @@ NASA_EARTHDATA_USERNAME=your_username_here
 NASA_EARTHDATA_PASSWORD=your_password_here
 ```
 
+**Render Deployment:**
+
+1. Go to Render Dashboard → Your Service
+2. Click "Environment" in the left sidebar
+3. Add environment variables:
+   - Key: `NASA_EARTHDATA_USERNAME` → Value: your NASA Earthdata username
+   - Key: `NASA_EARTHDATA_PASSWORD` → Value: your NASA Earthdata password
+4. Click "Save Changes"
+5. The app will automatically restart with the new credentials
+
 **Replit Deployment:**
 
 1. Open project in Replit
