@@ -10,7 +10,7 @@
 > **Real-time harmful algal bloom detection and monitoring using NASA satellite data to protect urban water supplies and public health**
 
 ### 🎯 Quick Links
-- 📹 [Demo Video](#-project-video) | 🚀 [Live Demo](YOUR_DEMO_LINK) | 📊 [Technical Details](#-technical-stack) | 👥 [Team](#-team)
+- Live Host **[► Render link](https://www.canva.com/design/DAG06nioybk/GQi2652XP6BKuhIiue995Q/view?embed#1)**
 
 ## 👥 Team
 
@@ -36,15 +36,11 @@
 
 ---
 
-**Project:** NASA Space Apps Challenge 2025  
-**Location:** [Your Location]  
-**Contact:** [Your Email/GitHub]
 
----
 
 ## 📹 Project Video
 
-**[► Watch Project Demo Video](YOUR_VIDEO_LINK_HERE)**
+**[► Watch Project Demo Video](https://www.canva.com/design/DAG06nioybk/GQi2652XP6BKuhIiue995Q/view?embed#1)**
 
 *3-minute demonstration showcasing:*
 - ✅ Real-time algal bloom detection in action
@@ -836,12 +832,7 @@ Clean, safe water is fundamental to healthy cities. By providing real-time algal
 
 ## 📞 Contact & Links
 
-- **GitHub Repository**: https://github.com/ChristopherJoshy/PROJECT-H.Y.D.R.A
-- **Team Email**: [Your Email]
-- **Project Demo**: [Live Demo Link]
-- **Video Presentation**: [YouTube/Video Link]
-- **NASA Space Apps Project Page**: [Space Apps Link]
-
+- **GitHub Repository**: https://github.com/ChristopherJoshy/PROJECT-H.Y.D.R.A.
 ---
 
 <div align="center">
