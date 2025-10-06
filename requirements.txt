@@ -18,6 +18,9 @@ folium==0.20.0
 requests==2.32.5
 urllib3==2.5.0
 
+# Environment Variables
+python-dotenv==1.0.1
+
 # Database
 psycopg2-binary==2.9.10
 
