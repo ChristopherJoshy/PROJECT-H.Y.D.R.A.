@@ -33,13 +33,18 @@ import base64
 import io
 import sqlite3
 import uuid
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-# Try multiple locations to ensure credentials are loaded
-load_dotenv()  # Current directory
-load_dotenv(Path(__file__).parent / ".env")  # Script directory
-load_dotenv(".env")  # Explicit relative path
+# Load environment variables from .env file (optional for local development)
+# On Render, environment variables are set directly in the dashboard
+try:
+    from dotenv import load_dotenv
+    # Try multiple locations to ensure credentials are loaded
+    load_dotenv()  # Current directory
+    load_dotenv(Path(__file__).parent / ".env")  # Script directory
+    load_dotenv(".env")  # Explicit relative path
+except ImportError:
+    # dotenv not available (e.g., on Render), use environment variables directly
+    pass
 
 # Configure logging with custom handler for Streamlit
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
